@@ -33,7 +33,8 @@ jobs:
           node-version: '16'
 
       - name: Use secret API key
-        run: echo "Using secret: ${{ secrets.API_KEY }}"
+        run: |
+          echo "Using secret: ${{ secrets.API_KEY }}"
 
       - name: Set up Python
         uses: actions/setup-python@v3
